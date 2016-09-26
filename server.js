@@ -37,7 +37,8 @@ var articles={
                 
                 
             },
-            articletwo: {title: 'Article Two | Sandeep PB',
+            articletwo: {
+                title: 'Article Two | Sandeep PB',
                 heading: 'Article Two',
                 date: 'Sep 19, 2016',
                 content: ` 
@@ -55,13 +56,6 @@ var articles={
                 </p>
                 <hr/>
             	<p>
-            	  This is about creating new webpages to the project.
-            	  This is about creating new webpages to the project.
-            	  This is about creating new webpages to the project.
-            	  This is about creating new webpages to the project.
-            	  This is about creating new webpages to the project.
-            	  This is about creating new webpages to the project.
-            	  This is about creating new webpages to the project.
             	  This is about creating new webpages to the project.
             	  This is about creating new webpages to the project.
             	</p>`}
@@ -111,7 +105,7 @@ app.get('/article-one', function (req, res) {
    res.send(createtemplate(articleone));
 });
 app.get('/article-two', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+   res.send(createtemplate(articletwo));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
