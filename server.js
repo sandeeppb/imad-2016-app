@@ -4,38 +4,69 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleone = {
-    title: 'Article One | Sandeep PB',
-    heading: 'Article One',
-    date: 'Sep 20, 2016',
-    content: ` 
-    <p>
-          creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-    </p>
-    <hr/>
-	<p>
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	  This is about creating new webpages to the project.
-	</p>`
-    
-    
+var articles={
+             articleone : {
+                title: 'Article One | Sandeep PB',
+                heading: 'Article One',
+                date: 'Sep 20, 2016',
+                content: ` 
+                <p>
+                      creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+                </p>
+                <hr/>
+            	<p>
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	</p>`
+                
+                
+            },
+            articletwo: {title: 'Article Two | Sandeep PB',
+                heading: 'Article Two',
+                date: 'Sep 19, 2016',
+                content: ` 
+                <p>
+                      creating Article Two to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+                </p>
+                <hr/>
+            	<p>
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	  This is about creating new webpages to the project.
+            	</p>`}
 };
+
 function createtemplate(data) {
             var title= data.title;
             var heading = data.heading;
