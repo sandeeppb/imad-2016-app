@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var articleone = {
     title: 'Article One | Sandeep PB',
     heading: 'Article One',
-    date: 'Sep 19, 2016',
+    date: 'Sep 20, 2016',
     content: ` 
     <p>
           creating new webpages to the project.
