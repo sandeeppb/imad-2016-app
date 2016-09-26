@@ -15,12 +15,13 @@ var articleone = {
 	  This is about creating new webpages to the project.
 	  This is about creating new webpages to the project.
 	  This is about creating new webpages to the project.
-	  </hr>
+	  
 	  This is about creating new webpages to the project.
 	  This is about creating new webpages to the project.
 	  This is about creating new webpages to the project.
 	  This is about creating new webpages to the project.
     </p>
+    </hr>
 	<p>
 	  This is about creating new webpages to the project.
 	  This is about creating new webpages to the project.
