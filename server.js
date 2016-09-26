@@ -10,7 +10,7 @@ var articleone = {
     date: 'Sep 19, 2016',
     content: ` 
     <p>
-          This is about creating new webpages to the project.
+          creating new webpages to the project.
 	  This is about creating new webpages to the project.
 	  This is about creating new webpages to the project.
 	  This is about creating new webpages to the project.
