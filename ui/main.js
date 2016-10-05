@@ -12,4 +12,6 @@ button.onclick = function()
             }
         }
     };
+request.open('GET','http://http://sandeeppb.imad.hasura-app.io/counter',true);
+request.send(null);
 };
